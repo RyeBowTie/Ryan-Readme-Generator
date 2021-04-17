@@ -1,0 +1,22 @@
+{
+  "name": "ryan-readme-generator",
+  "version": "1.0.0",
+  "description": "A command line application to generate README files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyeBowTie/Ryan-Readme-Generator.git"
+  },
+  "author": "Ryan O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyeBowTie/Ryan-Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/RyeBowTie/Ryan-Readme-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
