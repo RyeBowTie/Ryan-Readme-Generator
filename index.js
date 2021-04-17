@@ -68,7 +68,7 @@ inquirer.prompt([
 
 function generateReadMe(response) {
     console.log(response);
-    const template = `#${response.title}\n#Description\n${response.description}\nTable of Contents\n*[Installation](#Installation)\n*[Usage](#Usage)\n*[License](#Licence)\n*[Contributing](#Contributing)\n*[Tests](#Tests)\n*[Questions](#Questions)\n#Installation\n${response.install}\n#Usage\n${response.usage}\n#Contributions\n${response.contributions}\n#Test\n${response.test}\n#Questions\nIf you have any questions you can reach me at\n${response.email}\nor through my GitHub\n[${response.github}](https://github.com/${response.github})`;
+    const template = `#${response.title}  # Description  ${response.description}  Table of Contents  * [Installation](#Installation)  *[Usage](#Usage)  *[License](#Licence)  *[Contributing](#Contributing)  *[Tests](#Tests)  *[Questions](#Questions)  # Installation  ${response.install}  # Usage  ${response.usage}  # Contributions  ${response.contributions}  # Test  ${response.test}  # Questions  If you have any questions you can reach me at  ${response.email}  or through my GitHub  [${response.github}](https://github.com/${response.github})`;
     writeReadMe(template);
 };
 
