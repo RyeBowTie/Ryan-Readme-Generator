@@ -33,6 +33,16 @@ inquirer.prompt([
         message: 'How can others test your application?'
     },
     {
+        name: 'github',
+        type: 'input',
+        message: 'What is your GitHub username?'
+    },
+    {
+        name: 'email',
+        type: 'input',
+        message: 'What is your email address?'
+    },
+    {
         name: 'license',
         type: 'checkbox',
         message: 'What is this application\'s licence?',
@@ -51,17 +61,19 @@ inquirer.prompt([
             'GNU Lesser General Public License v2.1',
             'Mozilla Public License 2.0',
             'The Unlicense'
-        ]    
-    },
+        ]  
+    }  
 ])
 .then (generateReadMe)
 
 function generateReadMe(response) {
     console.log(response);
-    const template = `something`;
+    const template = `#${response.title}\n#Description\n${response.description}\nTable of Contents\n*[Installation](#Installation)\n*[Usage](#Usage)\n*[License](#Licence)\n*[Contributing](#Contributing)\n*[Tests](#Tests)\n*[Questions](#Questions)\n#Installation\n${response.install}\n#Usage\n${response.usage}\n#Contributions\n${response.contributions}\n#Test\n${response.test}\n#Questions\nIf you have any questions you can reach me at\n${response.email}\nor through my GitHub\n[${response.github}](https://github.com/${response.github})`;
     writeReadMe(template);
 };
 
 function writeReadMe (template) {
     console.log(template);
-}
+    fs.writeFile('README.md', template, (err) => 
+    err ? console.error(err) : console.log('Commit logged!'))
+};
