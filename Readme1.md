@@ -8,12 +8,11 @@ https://github.com/RyeBowTie/Ryan-Readme-Generator
 
 A command line application that generates a README file based upon user inputs.
 
+![2](https://user-images.githubusercontent.com/74829094/115157061-39f5b380-a055-11eb-81d5-bad79f20e42a.png)
 
-![](../OneDrive/Pictures/Screenshots/README/2.png)
+![3](https://user-images.githubusercontent.com/74829094/115157082-4b3ec000-a055-11eb-9d8b-c21602fd6836.png)
 
-![](../OneDrive/Pictures/Screenshots/README/3.png)
-
-![](../OneDrive/Pictures/Screenshots/README/1.png)
+![1](https://user-images.githubusercontent.com/74829094/115157096-57c31880-a055-11eb-8f0f-5342bf9e7f32.png)
 
 ## Code
 
