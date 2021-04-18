@@ -68,7 +68,7 @@ inquirer.prompt([
 
 function generateReadMe(response) {
     console.log(response);
-    const template = `#${response.title}  # Description  ${response.description}  Table of Contents  * [Installation](#Installation)  *[Usage](#Usage)  *[License](#Licence)  *[Contributing](#Contributing)  *[Tests](#Tests)  *[Questions](#Questions)  # Installation  ${response.install}  # Usage  ${response.usage}  # Contributions  ${response.contributions}  # Test  ${response.test}  # Questions  If you have any questions you can reach me at  ${response.email}  or through my GitHub  [${response.github}](https://github.com/${response.github})`;
+    const template = `# ${response.title}\n## Description\n<br>***<br>${response.description}<br>***<br>\n## Table of Contents\n<br>***<br>*[Installation](#Installation)<br>*[Usage](#Usage)<br>*[License](#Licence)<br>*[Contributing](#Contributing)<br>*[Tests](#Tests)<br>*[Questions](#Questions)<br>***<br>***<br>\n## Installation\n<br>***<br>${response.install}<br>***<br>\n## Usage\n<br>***<br>${response.usage}<br>***<br>\n## Contributions\n<br>***<br>${response.contributions}<br>***<br>\n## Test\n<br>***<br>${response.test}<br>***<br>\n## Questions\n<br>***<br>If you have any questions you can reach me at<br>***<br>${response.email}<br>***<br>or<br>***<br>through my GitHub<br>[${response.github}](https://github.com/${response.github})`;
     writeReadMe(template);
 };
 
